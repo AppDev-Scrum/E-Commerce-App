@@ -1,0 +1,117 @@
+body{
+    margin: none;
+    background-image: url('bgpic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/* Dashboard */
+.dashboardLabel{
+    color: white;
+}
+
+
+
+/* For the log in page */
+.login-container, 
+.registration-container {
+    background-color: rgba(226, 224, 224, 0.767);
+    max-width: 400px;
+}
+/* Log in button */
+.loginbtn{
+    background-color: rgba(5, 126, 27, 0.7);
+
+}
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+}
+
+/* product details container*/
+.addProductlbl{
+    margin-top: 30px;
+    color:white;
+    font-weight: bold;
+
+}
+
+.product-details-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between the two sections */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 50px auto; /* Centering the container */
+    margin-top: 10px;
+    width: 80%; /* Width of the container */
+}
+
+.left-panel,
+.right-panel {
+    flex: 1; /* Equal width for both panels */
+    margin: 0 20px; /* Space between panels */
+}
+
+h1 {
+    color: rgb(22, 148, 28); /* Red color for the heading */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /* Font styling */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold; /* Making label bold */
+}
+
+.btn-save {
+    background-color: #5cb85c; /* Green color for save button */
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-save:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+.btn-cancel {
+    background-color: #d9534f; /* Red color for cancel button */
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+/* Table props */
+.d-flex{
+    justify-content: center;
+}
+
+tr:hover{
+    background-color: #4cae4c;
+    color: white;
+}
+
+.signupbtn{
+    background: none;
+    color: rgb(123, 123, 221);
+    text-decoration: underline;
+    border: none
+}
+
+.signupbtn:hover{
+    color: black
+}
+
