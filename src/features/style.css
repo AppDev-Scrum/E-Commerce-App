@@ -5,21 +5,20 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    max-height: max-content;
 
 }
 
 /* Dashboard */
-.dashboardLabel{
-    color: white;
+.dashBoard{
+    color: rgb(27, 23, 23);
 }
-
-
 
 /* For the log in page */
 .login-container, 
 .registration-container {
     background-color: rgba(226, 224, 224, 0.767);
-    max-width: 400px;
+    max-width: 350px;
 }
 /* Log in button */
 .loginbtn{
@@ -98,6 +97,9 @@ textarea {
 .d-flex{
     justify-content: center;
 }
+.th_action{
+    text-align: center;
+}
 
 tr:hover{
     background-color: #4cae4c;
@@ -113,5 +115,14 @@ tr:hover{
 
 .signupbtn:hover{
     color: black
+}
+
+
+/* Dashboard props */
+.noResult{
+
+    background-color: white;
+    color: red;
+    font-weight: bold;
 }
 

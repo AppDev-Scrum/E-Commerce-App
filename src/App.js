@@ -22,7 +22,6 @@ function App() {
       {/* <EditProduct/> */}
       {/* <ProductList/> */}
 
-
       {/* // The Router must wrap the entire app to provide routing context */}
       <Router>
         <Routes>
