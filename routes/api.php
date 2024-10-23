@@ -9,5 +9,8 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+// Define the search route first to avoid conflict with apiResource
+Route::get('/products/search', [ProductController::class, 'search']);
+
 // Product routes using apiResource
 Route::apiResource('products', ProductController::class);

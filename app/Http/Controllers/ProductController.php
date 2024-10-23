@@ -104,5 +104,23 @@ class ProductController extends Controller
             'success' => true,
             'message' => 'Product deleted successfully'
         ], 200); // Return success message with 200 OK status
+
+    }
+
+    // Search for products by name or category
+    public function search(Request $request)
+    {
+        $query = $request->input('query'); // Get the search query from request
+
+        // Search products by name or category using LIKE operator
+        $products = Product::where('name', 'LIKE', "%{$query}%")
+            ->orWhere('category', 'LIKE', "%{$query}%")
+            ->get();
+
+        // Return matching products
+        return response()->json([
+            'success' => true,
+            'data' => $products
+        ], 200); // Return search results with 200 OK status
     }
 }
