@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Product List Title */
+.product-list-title {
+    color: #FF6A13; /* McLaren Orange */
+    font-size: 2rem; /* Larger title */
+    margin-block-end: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+/* Search bar styles */
+.search-bar {
+    inline-size: 300px; /* Width of the search bar */
+    border: 2px solid #FF6A13; /* McLaren Orange border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Inner padding for better spacing */
+    font-size: 1rem; /* Font size */
+    margin-block-end: 20px; /* Space below the search bar */
+}
+
+/* Button styles */
+.add-product-button {
+    background-color: #FF6A13; /* McLaren Orange */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-block-end: 20px; /* Space below the button */
+}
+
+.add-product-button:hover {
+    background-color: #E65C0E; /* Darker orange on hover */
+}
+
+/* Table styles */
+table {
+    inline-size: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-block-start: 20px; /* Space above the table */
+}
+
+/* Table header styles */
+th {
+    background-color: #FF6A13; /* McLaren Orange */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Padding in table headers */
+}
+
+/* Table cell styles */
+td {
+    padding: 10px; /* Padding in table cells */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .search-bar {
+        inline-size: 100%; /* Full width on smaller screens */
+    }
+
+    .add-product-button {
+        inline-size: 100%; /* Full width button */
+    }
+}
