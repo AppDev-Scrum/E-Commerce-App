@@ -1,0 +1,432 @@
+/* General Page Styling */
+body {
+  background-color: #121f45; /* McLaren medium blue */
+}
+
+/*======================== Login Form Styling ========================*/
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121f45; /* McLaren dark blue background */
+}
+
+.login-form {
+  background-color: #223971; /* McLaren medium blue */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form h2 {
+  color: #ffc906; /* McLaren yellow */
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  color: #fff;
+  font-weight: bold;
+}
+
+.login-form .form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #cc1e4a; /* McLaren red border */
+}
+
+.login-form .form-control:focus {
+  border-color: #ffc906; /* McLaren yellow border on focus */
+  box-shadow: 0 0 5px rgba(255, 201, 6, 0.8); /* McLaren yellow focus effect */
+}
+
+.login-button {
+  background-color: #cc1e4a; /* McLaren red */
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-button:hover {
+  background-color: #f49d3c; /* Slightly lighter McLaren red on hover */
+}
+
+.text-danger, .error-message {
+  color: #cc1e4a; /* McLaren red */
+  margin-top: 10px;
+  font-size: 14px;
+  transition: opacity 1s ease-in-out;
+}
+
+/*======================== Add Form Styling ========================*/
+/* Centering Container */
+.add-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: transparent; /* Dark background */
+}
+
+.add-floating-form {
+  background-color: #21212173; /* McLaren Black */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.add-form-heading {
+  color: #ff6c00; /* McLaren Orange */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.add-form-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 1rem; /* Adjust label font size */
+  color: #ff6c00; /* McLaren Orange */
+  transition: 0.3s ease all;
+  pointer-events: none; /* Prevent clicking on the label */
+}
+
+.add-form-control {
+  width: 100%;
+  border: 2px solid #003b5c; /* Dark Blue */
+  border-radius: 8px;
+  padding: 14px 16px; /* Adjust for label */
+  font-size: 1.1rem; /* Input text size */
+  background-color: #ffffff;
+  color: #212121; /* Text color inside input */
+}
+
+.add-form-control:focus {
+  border-color: #ff6c00; /* McLaren Orange */
+  outline: none;
+}
+
+.add-form-control:focus + .add-form-label,
+.add-form-control:not(:placeholder-shown) + .add-form-label {
+  top: -10px;
+  font-size: 0.85rem;
+  color: #ff6c00; /* Keep McLaren Orange on focus */
+  background-color: #d8222200;
+  padding: 0 4px;
+}
+
+.add-submit-btn {
+  background-color: #ff6c00; /* McLaren Orange */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-submit-btn:hover {
+  background-color: #003b5c; /* Dark Blue */
+}
+
+.add-cancel-btn {
+  background-color: #ff6c00; /* McLaren Orange */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-cancel-btn:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+/*======================== Edit Form Styling ========================*/
+/* Centering Container for Edit Product */
+.Edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #121f45; /* Dark background */
+}
+
+.Edit-floating-form {
+  background-color: #212121; /* McLaren Black */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.Edit-form-heading {
+  color: #ff6c00; /* McLaren Orange */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Edit-form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Edit-input-field {
+  width: 100%;
+  border: 2px solid #003b5c; /* Dark Blue */
+  border-radius: 8px;
+  padding: 14px 16px; /* Adjust for label */
+  font-size: 1.1rem; /* Input text size */
+  background-color: #ffffff;
+  color: #212121; /* Text color inside input */
+}
+
+.Edit-input-field:focus {
+  border-color: #ff6c00; /* McLaren Orange */
+  outline: none;
+}
+
+.Edit-input-field:focus + label,
+.Edit-input-field:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.85rem;
+  color: #ff6c00; /* Keep McLaren Orange on focus */
+  background-color: #212121;
+  padding: 0 4px;
+}
+/* Label styling (orange color) */
+.Edit-form-group label {
+  color: #ff6c00; /* Default label color */
+  font-size: 1rem;
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  transition: 0.2s ease;
+}
+
+.Edit-submit-btn {
+  background-color: #ff6c00; /* McLaren Orange */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Edit-submit-btn:hover {
+  background-color: #003b5c; /* Dark Blue */
+}
+.Edit-cancel-btn {
+  background-color: #ff6c00; /* McLaren Orange */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Edit-cancel-btn:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+
+/*======================== Navbar Styling ========================*/
+/* Customize the Navbar */
+.navbar-custom {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-custom {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link-custom {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  background-color: #ffc906; /* McLaren yellow accent */
+  color: #121f45; /* McLaren blue accent */
+}
+
+/* Active link styles */
+.nav-link-custom.active {
+  background-color: #121f45;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar-custom {
+    border-radius: 0;
+  }
+
+  .navbar-brand-custom {
+    font-size: 1.25rem;
+  }
+}
+
+/*=======================View product==================================*/
+
+/* Overall Container */
+.view-product-container {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke; /* Dark McLaren Blue */
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar:focus {
+  border-color: #ffc906; /* McLaren Yellow */
+  box-shadow: 0 0 5px rgba(255, 200, 6, 0.5);
+}
+
+/* Add Product Button */
+.add-product-button {
+  background-color: #ffc906; /* McLaren Yellow */
+  color: #121f45; /* McLaren Blue */
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.add-product-button:hover {
+  background-color: #121f45;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+/* Table Styling */
+.product-table th,
+.product-table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.product-table th {
+  background-color: #121f45;
+  color: #fff;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-table tbody tr:hover {
+  background-color: #ffe1a8; /* Light hover effect */
+}
+
+.action-button {
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .product-table {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*==============details ========================*/
+/* ecommerce.css */
+/* McLaren-inspired color palette */
+.card {
+  background-color: #121f45; /* McLaren Dark Blue */
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
+
+.card-title {
+  color: #f5a300; /* McLaren Papaya Orange */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-subtitle {
+  color: #f5a300; /* McLaren Papaya Orange */
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #ffffff; /* White text for product details */
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  background-color: #f5a300; /* McLaren Papaya Orange */
+  color: #121f45; /* McLaren Dark Blue */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 15px;
+}
