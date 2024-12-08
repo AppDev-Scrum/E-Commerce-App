@@ -1,0 +1,59 @@
+/* Container for the product list */
+.product-list-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fdf5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the search input group */
+.search-input-group {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.product-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-list-table th, .product-list-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-list-table td {
+  background-color: #fff;
+}
+
+.product-list-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styles */
+.product-list-table .btn {
+  margin: 5px;
+}
+
+.product-list-table .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.product-list-table .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Style for the Sort Dropdown */
+.product-list-table .dropdown-button {
+  margin-bottom: 20px;
+}
