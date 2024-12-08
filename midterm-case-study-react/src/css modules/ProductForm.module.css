@@ -1,0 +1,83 @@
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add consistent spacing between form groups */
+  max-width: 500px;
+  margin: 0 auto; /* Center the form */
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease;
+}
+
+.form:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Slight hover effect for interactivity */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add space between label and input */
+}
+
+/* Buttons Base */
+.button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button */
+.SubmitButton {
+  background-color: #007bff; /* Professional blue */
+}
+
+.SubmitButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add to Cart Button */
+.AddToCartButton {
+  background-color: #ec4547; /* Vivid red for action */
+}
+
+.AddToCartButton:hover {
+  background-color: #9b3133; /* Deep red for hover */
+}
+
+/* Buy Now Button */
+.BuyNowButton {
+  background-color: #2cb37e; /* Modern green */
+  margin-right: 15px; /* Adjust spacing for inline buttons */
+}
+
+.BuyNowButton:hover {
+  background-color: #258860; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,81 @@
+/* Filter Container */
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add spacing for better readability */
+  background-color: #f8f9fa; /* Light neutral background */
+  border-radius: 8px; /* Rounded corners for modern look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Filter Icon */
+.filterIcon {
+  color: #5a9be7; /* Modern cornflower blue */
+  font-size: 1.5rem; /* Slightly larger for visibility */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth interaction */
+}
+
+.filterIcon:hover {
+  cursor: pointer;
+  color: #1d6fdc; /* Darker shade on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Paragraph Styling */
+.p {
+  margin: 0;
+  padding-right: 5px;
+  font-size: 1rem; /* Standard font size */
+  color: #333; /* Neutral text color */
+}
+
+/* Buttons Styling */
+.viewButton {
+  color: #eb9431; /* Vibrant orange */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.viewButton:hover {
+  color: #d57d29; /* Slightly darker orange */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.editButton {
+  color: #2cb37e; /* Modern green */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.editButton:hover {
+  color: #258860; /* Darker green on hover */
+  transform: translateY(-2px); /* Subtle lift */
+}
+
+.deleteButton {
+  color: #ec4547; /* Vibrant red */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  color: #9b3133; /* Deeper red */
+  transform: translateY(-2px); /* Subtle lift */
+}
+
+/* Button Container */
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px; /* Add space between buttons */
+  padding: 10px;
+}
+
+.buttonContainerUser {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
